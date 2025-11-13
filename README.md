@@ -132,7 +132,7 @@ Host: www.example.com
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/kritikaIS/SecureGuard.git>
 cd Advanced-WAF-WAFinity
 ```
 
@@ -148,7 +148,4 @@ pip install -r requirements.txt
 python app.py
 ```
 
-## License
 
-MIT License
- 
