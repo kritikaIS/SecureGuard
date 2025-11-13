@@ -22,20 +22,19 @@ In addition to signature-based detection, it uses **machine learning-based anoma
 ##  Output Screenshots
 
 <p float="left">
-    <img src="/Users/kritikavaryani/Advanced-WAF-WAFinity/output-screenshots/file1.png" width="400"/>
-    <img src="/Users/kritikavaryani/Advanced-WAF-WAFinity/output-screenshots/Screenshot 2025-11-14 at 12.09.54 AM.png" width="400"/>
+  <img src="./output-screenshots/file1.png" width="400"/>
+  <img src="./output-screenshots/Screenshot_2025-11-14_at_12.09.54_AM.png" width="400"/>
 </p>
 
 <p float="left">
-    <img src="/Users/kritikavaryani/Advanced-WAF-WAFinity/output-screenshots/Screenshot 2025-11-14 at 12.10.23 AM.png" width="400"/>
-    <img src="/Users/kritikavaryani/Advanced-WAF-WAFinity/output-screenshots/Screenshot 2025-11-14 at 12.11.09 AM.png" width="400"/>
+  <img src="./output-screenshots/Screenshot_2025-11-14_at_12.10.23_AM.png" width="400"/>
+  <img src="./output-screenshots/Screenshot_2025-11-14_at_12.11.09_AM.png" width="400"/>
 </p>
 
 <p float="left">
-    <img src="/Users/kritikavaryani/Advanced-WAF-WAFinity/output-screenshots/Screenshot 2025-11-14 at 12.11.25 AM.png" width="400"/>
-    <img src="/Users/kritikavaryani/Advanced-WAF-WAFinity/output-screenshots/Screenshot 2025-11-14 at 12.13.27 AM.png" width="400"/>
+  <img src="./output-screenshots/Screenshot_2025-11-14_at_12.11.25_AM.png" width="400"/>
+  <img src="./output-screenshots/Screenshot_2025-11-14_at_12.13.27_AM.png" width="400"/>
 </p>
-
 
 ## Tech Stack
 
