@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureGuard - Security Request Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="/" class="logo">
+                    <div class="logo-icon">🛡️</div>
+                    <span class="logo-text">SecureGuard</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/home" class="nav-btn primary">Check Security</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Checker Section -->
+    <section class="checker-section">
+        <div class="checker-container">
+            <div class="checker-header">
+                <h1 class="checker-title">Request Security Analysis</h1>
+                <p class="checker-subtitle">
+                    Submit an HTTP request for security evaluation. Our system analyzes requests using 
+                    signature-based detection and machine learning to identify potential threats.
+                </p>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <label for="user-input" class="input-label">HTTP Request</label>
+                    <textarea 
+                        id="user-input" 
+                        class="request-input"
+                        placeholder="Paste your HTTP request here for analysis...&#10;&#10;Example:&#10;GET /search?q=test HTTP/1.1&#10;Host: www.example.com"
+                        rows="6"
+                        autocomplete="off"></textarea>
+                </div>
+                <button class="btn btn-primary btn-large" id="submit-btn">
+                    <span class="btn-text">Analyze Request</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+            
+            <div id="loading" class="loading-container">
+                <div class="spinner"></div>
+                <span class="loading-text">Analyzing request...</span>
+            </div>
+            
+            <div id="result" class="result-container"></div>
+
+            <!-- Security Tips Section -->
+            <div class="security-tips">
+                <div class="tips-header">
+                    <h3 class="tips-title">Security Information</h3>
+                    <div class="tips-nav">
+                        <button class="tip-nav-btn prev" aria-label="Previous">←</button>
+                        <button class="tip-nav-btn next" aria-label="Next">→</button>
+                    </div>
+                </div>
+                <div class="tips-container">
+                    <div class="tip-slide active">
+                        <div class="tip-icon">🌐</div>
+                        <div class="tip-content">
+                            <h4>Threat Landscape</h4>
+                            <p>Cyber attacks occur approximately every 39 seconds globally. Real-time monitoring and detection are essential for effective protection.</p>
+                        </div>
+                    </div>
+                    <div class="tip-slide">
+                        <div class="tip-icon">🤖</div>
+                        <div class="tip-content">
+                            <h4>Machine Learning Detection</h4>
+                            <p>ML-based systems can identify and respond to threats significantly faster than traditional signature-based methods.</p>
+                        </div>
+                    </div>
+                    <div class="tip-slide">
+                        <div class="tip-icon">💡</div>
+                        <div class="tip-content">
+                            <h4>Input Validation</h4>
+                            <p>Most successful attacks exploit unsanitized inputs. Proper validation and sanitization of user data is critical.</p>
+                        </div>
+                    </div>
+                    <div class="tip-slide">
+                        <div class="tip-icon">🚀</div>
+                        <div class="tip-content">
+                            <h4>Response Performance</h4>
+                            <p>Early detection is crucial during an attack. Our system analyzes requests in under 100ms to minimize response time.</p>
+                        </div>
+                    </div>
+                    <div class="tip-slide">
+                        <div class="tip-icon">🕷️</div>
+                        <div class="tip-content">
+                            <h4>Zero-Day Vulnerabilities</h4>
+                            <p>Unknown vulnerabilities may remain undetected for extended periods. Pattern-based detection helps identify emerging threats.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='home.js') }}" defer></script>
+</body>
+</html>

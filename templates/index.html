@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureGuard – AI-Powered Web Security</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="/" class="logo">
+                    <div class="logo-icon">🛡️</div>
+                    <span class="logo-text">SecureGuard</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="/home" class="nav-btn primary">Check Security</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">Enterprise-Grade Security</div>
+                    <h1 class="hero-title">
+                        Enterprise Web Application
+                        <span class="gradient-text">Protection</span>
+                    </h1>
+                    <p class="hero-description">
+                        A hybrid web application firewall that combines signature-based detection with 
+                        machine learning to protect against known threats and emerging attack patterns.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="/home" class="btn btn-primary">Analyze Request</a>
+                        <button class="btn btn-secondary" onclick="scrollToHowItWorks()">How It Works</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">>90%</div>
+                            <div class="stat-label">Detection Rate</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">&lt;100ms</div>
+                            <div class="stat-label">Response Time</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">&lt;0.001%</div>
+                            <div class="stat-label">False Positives</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="security-card">
+                        <div class="card-header">
+                            <div class="status-indicator active"></div>
+                            <span>Security Active</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="metric-row">
+                                <span>Requests Scanned</span>
+                                <strong>1,234,567</strong>
+                            </div>
+                            <div class="metric-row">
+                                <span>Threats Blocked</span>
+                                <strong class="threat">12,345</strong>
+                            </div>
+                            <div class="metric-row">
+                                <span>Uptime</span>
+                                <strong>99.9%</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-subtitle">Dual-layer security architecture providing comprehensive threat protection</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-number">01</div>
+                        <div class="feature-icon">🔍</div>
+                        <h3 class="feature-title">Signature Detection</h3>
+                        <p class="feature-description">
+                            Requests are evaluated against an extensive database of known attack patterns 
+                            including SQL injection, XSS, CSRF, and SSRF vulnerabilities.
+                        </p>
+                    </div>
+                    <div class="feature-card highlight">
+                        <div class="feature-number">02</div>
+                        <div class="feature-icon">🤖</div>
+                        <h3 class="feature-title">Machine Learning Analysis</h3>
+                        <p class="feature-description">
+                            Suspicious requests are analyzed using machine learning models to identify 
+                            obfuscated attacks and zero-day vulnerabilities that evade signature-based detection.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-number">03</div>
+                        <div class="feature-icon">✅</div>
+                        <h3 class="feature-title">Request Validation</h3>
+                        <p class="feature-description">
+                            Requests must pass both security layers before being validated. This dual-layer 
+                            approach ensures comprehensive protection while maintaining low false positive rates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Security Professionals</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"SecureGuard identified threats that our previous firewall missed. The hybrid detection approach provides the coverage we needed."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>Security Team</strong>
+                                <span>Enterprise Organization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The machine learning component significantly improved our threat detection. We've maintained zero breaches since deployment."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>IT Department</strong>
+                                <span>Technology Company</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Straightforward implementation with robust protection. SecureGuard serves as our primary defense layer against web-based attacks."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>DevOps Team</strong>
+                                <span>Software Company</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">🛡️</div>
+                        <span class="logo-text">SecureGuard</span>
+                    </div>
+                    <p class="footer-tagline">Enterprise Web Application Protection</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SecureGuard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
