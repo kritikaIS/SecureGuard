@@ -4,10 +4,6 @@
 
 In addition to signature-based detection, it uses **machine learning-based anomaly detection** to identify obfuscated, zero-day, and previously unknown attacks by analyzing patterns and behaviors in incoming requests.
 
-## **How it works**
-
-![WAF Flow](./Hybrid%20WAF_files/WAF%20flow.jpg)
-
 
 ## Features
 
