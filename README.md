@@ -132,8 +132,8 @@ Host: www.example.com
 1. Clone the repository:
 
 ```bash
-git clone <https://github.com/kritikaIS/SecureGuard.git>
-cd Advanced-WAF-WAFinity
+git clone https://github.com/kritikaIS/SecureGuard.git
+cd SecureGuard
 ```
 
 2. Install dependencies:
