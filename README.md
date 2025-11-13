@@ -23,17 +23,17 @@ In addition to signature-based detection, it uses **machine learning-based anoma
 
 <p float="left">
   <img src="./output-screenshots/file1.png" width="400"/>
-  <img src="./output-screenshots/Screenshot_2025-11-14_at_12.09.54_AM.png" width="400"/>
+  <img src="./output-screenshots/file2.png" width="400"/>
 </p>
 
 <p float="left">
-  <img src="./output-screenshots/Screenshot_2025-11-14_at_12.10.23_AM.png" width="400"/>
-  <img src="./output-screenshots/Screenshot_2025-11-14_at_12.11.09_AM.png" width="400"/>
+  <img src="./output-screenshots/file3.png" width="400"/>
+  <img src="./output-screenshots/file4.png" width="400"/>
 </p>
 
 <p float="left">
-  <img src="./output-screenshots/Screenshot_2025-11-14_at_12.11.25_AM.png" width="400"/>
-  <img src="./output-screenshots/Screenshot_2025-11-14_at_12.13.27_AM.png" width="400"/>
+  <img src="./output-screenshots/file5.png" width="400"/>
+  <img src="./output-screenshots/file6.png" width="400"/>
 </p>
 
 ## Tech Stack
